@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <img src="https://pngimg.com/uploads/filmstrip/filmstrip_PNG143.png"/>
+    <p id="description">Are you a movie lover?</p>
+    <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label"
+      for="name">Your name
+      </label>
+      <input required id="name"
+      type="text" placeholder="name"
+      class="block"/>
+      
+
+      <label id="email-label" for="email">Your email 
+      </label><input required id="email" type="email" placeholder="email" class="block"/>
+      
+
+      <label id="number-label" for="age">Your age
+      </label><input id="number" type="number" min="10" max="90" placeholder="age" class="block"/>
+    </fieldset>
+
+    <fieldset>
+      <legend> Which streaming platforms do you use to watch movies?</legend>
+      <label for="dropdown">
+      <select id="dropdown" class="block">
+        <option value="1">Select</option>
+        <option value="2">Netflix</option>
+        <option value="3">Amazon Prime</option>
+        <option value="4">Disney+</option>
+        <option value="5">Other (specify)</option>
+      </select>
+      <input type="text" placeholder="other"/>
+      </label>
+     </fieldset>
+
+    <fieldset>
+      <legend>How often do you watch movies?</legend>
+      <label><input type="radio" name="radio" value="daily" checked/> Daily</label>
+      <label><input type="radio" name="radio" value="weekly"/> Weekly</label>
+      <label><input type="radio" name="radio" value="monthly"/> Monthly</label>
+      <label><input type="radio" name="radio" value="rarely"/> Rarely</label>
+    </fieldset>
+
+
+    <fieldset>
+    <legend>What are your favorite movie genres?</legend>
+ 
+      <label><input type="checkbox" value="Action"/> Action </label>
+       <label> <input type="checkbox" value="Drama"/> Drama</label>
+       <label> <input type="checkbox" value="Comedy"/> Comedy</label>
+       <label> <input type="checkbox" value="Thriller"/> Thriller</label>
+        <label><input type="checkbox" value="Other"/> Other (specify)
+        <input type="text" class="block" placeholder="other"/></label>
+    </fieldset>
+     
+    <fieldset>
+      <label> Tell me about your favorite movie </label><textarea placeholder="my favorite movie is..." class="block" ></textarea>
+    </fieldset>
+      
+      <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
