@@ -73,10 +73,18 @@ input:focus {
   border: none;
   padding: 3px;
   margin-bottom: 3px;
-  color: #ecf2f1;
 }
 
 textarea {
   width: 100%;
   height: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  form {
+    width: 300px;
+  }
+  header {
+    margin: auto;
+  }
 }
